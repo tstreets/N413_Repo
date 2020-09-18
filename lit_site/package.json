@@ -1,0 +1,12 @@
+{
+  "name": "lit_list",
+  "version": "1.0.0",
+  "description": "What is CodeIgniter ###################",
+  "main": "index.js",
+  "scripts": {
+    "compile:less": "lessc assets/less/styles.less assets/css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

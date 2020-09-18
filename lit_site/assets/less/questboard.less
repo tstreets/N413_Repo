@@ -1,0 +1,83 @@
+.questboard {
+    width: 725px;
+    background-color: #573d31;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px;
+}
+
+.quest {
+    width: 200px;
+    height: 200px;
+
+    margin-right: 24px;
+    margin-bottom: 24px;
+
+    &[data-col = "2"] &__description {
+        margin-left: -224px;
+    }
+
+    &[data-col = "1"] &__description {
+        margin-left: 0px;
+    }
+
+    &[data-col = "0"] &__description {
+        margin-left: -448px;
+    }
+
+    &[open] {
+        min-height: 450px;
+
+        .quest__summary::-webkit-details-marker {
+            color: #573d31;
+            font-size: 20px;
+        }
+    }
+
+    &__summary {
+        width: 200px;
+        height: 200px;
+        background-color: #cdb889;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        cursor: pointer;
+
+        &::-webkit-details-marker {
+            // style the arrow
+            padding: 4px;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+    }
+
+    &__image {
+        width: auto;
+        height: 150px;
+    }
+
+    &__description {
+        width: 650px;
+        height: 200px;
+        padding: 24px;
+        background-color: #cdb889;
+
+        position: relative;
+        top: 8px;
+
+        overflow: hidden;
+        font-size: 18px;
+    }
+
+    &__accept {
+        display: block;
+        margin-top: 16px;
+        padding: 5px;
+    }
+}
