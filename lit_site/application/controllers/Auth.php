@@ -29,4 +29,11 @@ class Auth extends CI_Controller {
         $this->load->view('templates/head', $data);
         $this->load->view('auth/logout', $data);
     }
+
+    public function register(){
+        $data["page_title"] = "Questboard | Register";
+        $data["this_page"] = "register";
+        $this->load->view('templates/head', $data);
+        $this->load->view('auth/register', $data);
+    }
 }

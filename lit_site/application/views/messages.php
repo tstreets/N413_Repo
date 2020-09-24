@@ -11,7 +11,7 @@
                 </div> <!-- /.col-12 -->
             </div> <!-- /.row --> 
             <?php 
-        //  if($this->session->role > 0){
+         if($this->session->role > 0){
                 foreach($messages as $message){
                     echo'
                     <div class="row mt-3">
@@ -23,14 +23,14 @@
                         <div class="col-6">'.$message["comment"].'</div>
                     </div> <!-- /.row -->';
                 } //foreach
-        //  }else{
-        //      echo'
-        //      <div class="row mt-3">  
-        //          <div class="col-12 text-center">
-                        // <h3>You are not authorized to view the messages.</h3>
-                    // </div>
-        //      </div> <!-- /.row -->';
-        //  } //else if       
+         }else{
+             echo'
+             <div class="row mt-3">  
+                 <div class="col-12 text-center">
+                        <h3>You are not authorized to view the messages.</h3>
+                    </div>
+             </div> <!-- /.row -->';
+         } //else if       
             ?>
         </div>  <!-- /.container-fluid -->
     </body>

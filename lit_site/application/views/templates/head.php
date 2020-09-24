@@ -43,15 +43,21 @@
                     <ul id="right_navbar" class="navbar-nav ml-auto mr-5">
                     <?php
                         if($this->session->user_id > 0){
+                            if($this->session->role > 0){
+                                echo '
+                                <li id="messages_item" class="nav-item">
+                                    <a id="messages_link" class="nav-link" href="'.site_url().'/litjams/messages">Messages</a>
+                                </li>';
+                            }
                             echo '
-                            <li id="messages_item" class="nav-item">
-                                <a id="messages_link" class="nav-link" href="'.site_url().'/questboard/messages">Messages</a>
-                            </li>
                             <li id="logout_item" class="nav-item">
                                 <a id="logout_link" class="nav-link" href="'.site_url().'/auth/logout">Log-Out</a>
                             </li>';
                         }else{
                             echo '
+                            <li id="register_item" class="nav-item">
+                                <a id="register_link" class="nav-link" href="'.site_url().'/auth/register">Register</a>
+                            </li>
                             <li id="login_item" class="nav-item">
                                 <a id="login_link" class="nav-link" href="'.site_url().'/auth">Log-In</a>
                             </li>';

@@ -23,9 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-// $config['base_url'] = 'http://localhost/N413/lit_list/';
-$config['base_url'] = 'https://in-info-web4.informatics.iupui.edu/~tstreets/N413/lit_list/';
-
+// $config['base_url'] = 'http://localhost/N413/N413_Repo/lit_site/';
+$config['base_url'] = 'https://in-info-web4.informatics.iupui.edu/~tstreets/N413/lit_site/';
+// 
 /*
 |--------------------------------------------------------------------------
 | Index File

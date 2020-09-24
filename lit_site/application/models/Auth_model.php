@@ -36,10 +36,8 @@
                 $messages["role"] = $this->session->role;
                 $messages["success"] = '<h3 class="text-center">You are now Logged In.</h3>';
             }else{
-                /* $messages["failed"] = '<h3 class="text-center">The Log-in was not successful.</h3>
-                <div class="col-12 text-center"><a href="'.site_url().'/auth"><button type="button" class="btn btn-primary mt-5">Try Again</button></a></div>'; */
-
-                $messages["failed"] = "Entered: " . $password;
+                $messages["failed"] = '<h3 class="text-center">The Log-in was not successful.</h3>
+                <div class="col-12 text-center"><a href="'.site_url().'/auth"><button type="button" class="btn btn-primary mt-5">Try Again</button></a></div>';
             }  
             return $messages;
         }
