@@ -36,4 +36,10 @@ class Auth extends CI_Controller {
         $this->load->view('templates/head', $data);
         $this->load->view('auth/register', $data);
     }
+
+    public function new_account(){
+        $credentials = $this->input->post();
+        $messages = $this->auth_model->new_account($credentials);
+        echo json_encode($messages);
+    }
 }
